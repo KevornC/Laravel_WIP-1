@@ -14,7 +14,6 @@ class StudentSelection extends Model
         'course_id',
         'enroll_dt',
         'is_approved',
-        'Active'
     ];
 
     function Users (){

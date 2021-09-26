@@ -12,7 +12,7 @@ class TypesOfCourse extends Model
     protected $table='types_of_courses';
 
     protected $fillable = [
-        'course_type','desc','Active'
+        'course_type','desc',
     ];
 
     function Courses(){
