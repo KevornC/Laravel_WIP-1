@@ -15,4 +15,10 @@ class Course extends Model
         'course_name',
         'course_type_id'
     ];
+
+    function TypesOfCourses(){
+        return $this->belongsTo(TypesOfCourse::class,'course_type_id');
+    }
+
+
 }
