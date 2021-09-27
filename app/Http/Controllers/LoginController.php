@@ -19,6 +19,7 @@ class LoginController extends Controller
             'email' => 'required',
             'password' => 'required'
         ]);
+        dd($req->email);
 
         if (Auth::attempt(
             ['email' => $request->email , 'password' => $request->password, 'is_admin'=>0])) {
